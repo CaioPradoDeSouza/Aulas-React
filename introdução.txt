@@ -1,0 +1,9 @@
+React foi criado pelo facebook em 2013
+
+O REACT é uma biblioteca para criação de interfaçes de usuário.
+
+REACT roda JAVASCRIPT no servidor e retorna a página pronta
+
+REACT é baseado em JAVASCRIPT ES6
+
+REACT só atualiza os componentes que sofrram alterações
