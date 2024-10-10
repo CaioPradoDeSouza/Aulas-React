@@ -1,3 +1,8 @@
+
+REACT
+
+--------------------------------------
+
 React foi criado pelo facebook em 2013
 
 O REACT é uma biblioteca para criação de interfaçes de usuário.
@@ -7,4 +12,20 @@ REACT roda JAVASCRIPT no servidor e retorna a página pronta
 REACT é baseado em JAVASCRIPT ES6
 
 REACT só atualiza os componentes que sofrram alterações
+
+REACT trabalha com modelo composicional, com componentes combinados
+
+REACT tem natureza DECLARATIVA
+
+pode conter código IMPERATIVO ou DECLARATIVO
+
+Usa fluxo de dados UNIDIRECIONAL
+
+---------------------------------------
+
+em REACT tudo é JAVASCRIPT 
+
+todo conteudo inserido é JAVASCRIPT
+
+usamos uma extensão de sintaxe chamada JSX que nos possibilita escrever HTML junto de JAVASCRIPT
 
