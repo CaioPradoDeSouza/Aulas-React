@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Logo from './componentes/imgs/logo.avif';
 
-function App() {
+
+
+export default function App(){
+
+  const canal1=()=>{
+    return 'https://www.youtube.com/c/CFBCursos'
+  }
+
+  const canal ='CFB cursos'
+
+  const curso = 'REACT'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Caio Prado de Souza
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Aprender REACT
-        </a>
+    <>
+      <header>
+        <h3>CFB CURSOS curso de REACT!</h3>
+        
+        <p>Canal: {canal}</p>
+        
+        <p>{'Curso: ' + curso}</p>
+        
+        <p>{canal1()}</p>
       </header>
-    </div>
+
+      <section>
+        <img src={Logo} alt="Logo do cachorro" />
+        <img src='/img/cachorro.webp' alt="Imagem do cachorro" />
+      </section>
+    </>
+    
   );
 }
-
-export default App;
