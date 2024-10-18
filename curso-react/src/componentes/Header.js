@@ -9,6 +9,7 @@ export default function Header(){
         <header>
             <img src={Logo}/>
             <h1>CFB CURSOS</h1>
+            
         </header>
     )
 }
