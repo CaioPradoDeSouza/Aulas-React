@@ -1,18 +1,25 @@
 import React, {useState} from 'react';
-import './App.css';
 
-import LedVerde from './componentes/imgss/led_verde.png'
-import LedVermelho from './componentes/imgss/led_vermelho.png'
+import Led from './componentes/Led'
 
 export default function App(){
 
-  const [ligado, setLigado]=useState(true);
+  const [ligado, setLigado] = useState(true);
+
+  const cancelar=(obj)=>{
+    return obj.preventDefault();
+  }
 
   return (
     <>
-      <img style={{width:'100px'}} src={ ligado?LedVerde:LedVermelho}/>
-      <button onClick={()=>setLigado(!ligado)}>{ ligado?'Desligar':'Ligar' }</button>
+      <Led ligado={ligado} setLigado={setLigado} />
+      <a
+        href='http://youtube.com/cfbcursos'
+        target='_blank'
+        onClick={(e)=>cancelar(e)}      
+      >
+        CFB CURSOS
+      </a>
     </>
-    
   );
 }
