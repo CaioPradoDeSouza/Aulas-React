@@ -1,20 +1,18 @@
-import React,{useState} from 'react';
+import React, {useState} from 'react';
 import './App.css';
-import Numero from './componentes/Numero'
 
-
+import LedVerde from './componentes/imgss/led_verde.png'
+import LedVermelho from './componentes/imgss/led_vermelho.png'
 
 export default function App(){
 
-  const[num,setNum] = useState(115);
-
+  const [ligado, setLigado]=useState(true);
 
   return (
     <>
-      <p>Valor do STATE: {num}</p>
-    
-      <Numero num={num} setNum={setNum}/>
+      <img style={{width:'100px'}} src={ ligado?LedVerde:LedVermelho}/>
+      <button onClick={()=>setLigado(!ligado)}>{ ligado?'Desligar':'Ligar' }</button>
     </>
     
-  )
+  );
 }
