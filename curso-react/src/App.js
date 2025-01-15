@@ -1,30 +1,14 @@
-import React,{useState} from 'react';
-
+import React from 'react';
+import Classe from './componentes/Classe.js';
 
 
 export default function App() {
 
-  const [nome, setNome] = useState();
-
-  const armazenar=(chave,valor)=>{
-    localStorage.setItem(chave,valor);
-  }
-
-  const consultar=(chave)=>{
-    alert(localStorage.getItem(chave));
-  }
-
-  const apagar=(chave)=>{
-    localStorage.removeItem(chave);
-  }
 
   return (
     <>
-        <label>Digite um nome</label><br/>
-        <input type="text" value={nome} onChange={(e)=>setNome(e.target.value)}/><br/>
-        <button onClick={()=>armazenar('ls_nome',nome)} >Gravar Nome</button><br/>
-        <button onClick={()=>consultar('ls_nome')} >Ver Nome</button><br/>
-        <button onClick={()=>apagar('ls_nome')} >Remover Nome</button>
+        <h1>Componentes de Classe</h1>
+        <Classe canal="CFB cursos" curso="REACT"/>
     </>
   );
 }
