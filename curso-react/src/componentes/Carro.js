@@ -14,6 +14,7 @@ export default class Carro extends React.Component{
         this.ld=this.ligarDesligar.bind(this)
     }
 
+
     ligarDesligar(){
         //this.setState({ligado:!this.state.ligado})
 
@@ -34,6 +35,18 @@ export default class Carro extends React.Component{
         )
     }
 
+    componentDidMount(){
+        console.log("Componente Carro renderizado")
+    }
+
+    componentDidUpdate(){
+        console.log("Componente atualizado")
+    }
+
+    componentWillUnmount(){
+        console.log("Componente Carro será desmontado")
+    }
+
     render(){
         return(
             <div>
@@ -50,6 +63,7 @@ export default class Carro extends React.Component{
                 <button onClick={()=>this.acelerar()}> 
                     Acelerar
                 </button>
+                
             </div>
         )
 
